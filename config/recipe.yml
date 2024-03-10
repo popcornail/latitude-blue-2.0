@@ -13,9 +13,7 @@ modules:
     repos:
         - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
     install:
-        - latte-dock
         - kvantum
-        - v4l-utils
         - eza
         - zerotier-one
         - zsh
@@ -50,6 +48,5 @@ modules:
         - org.onlyoffice.desktopeditors
         - com.sindresorhus.Caprine
         - com.bitwarden.desktop
-        - one.ablaze.floorp
 
   - type: signing
