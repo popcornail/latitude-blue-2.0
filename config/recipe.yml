@@ -19,27 +19,59 @@ modules:
 
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+        - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
     install:
       # - micro
       # - starship
+        - latte-dock
+        - kvantum
+        - v4l-utils
+        - eza
+        - zerotier-one
+        - zsh
+        - neovim
+        - easyeffects
+        - pavucontrol
+        - brave-browser
+        - chromium
+    optfix:
+        - brave.com
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox
+        - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+        - filelight
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
+       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+       repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
+        - com.visualstudio.code
+        - com.spotify.Client
+        - com.discordapp.Discord
+        - org.signal.Signal
+        - org.qbittorrent.qBittorrent
+        - com.stremio.Stremio
+        - org.videolan.VLC
+        - com.github.d4nj1.tlpui
+        - net.nokyan.Resources
+        - org.fedoraproject.MediaWriter
+        - org.onlyoffice.desktopeditors
+        - com.sindresorhus.Caprine
+        - com.bitwarden.desktop
+        - one.ablaze.floorp
+
 
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
