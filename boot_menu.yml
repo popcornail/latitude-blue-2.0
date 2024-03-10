@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: blue-build/template
+  - label: popcornail/latitude-blue-2.0
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: blue-build/template
+      - label: latitude-blue-2.0
