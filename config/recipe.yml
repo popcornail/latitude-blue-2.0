@@ -13,8 +13,6 @@ modules:
     repos:
         - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
     install:
-        - latte-dock
-        - kvantum
         - eza
         - zerotier-one
         - zsh
