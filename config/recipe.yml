@@ -13,7 +13,7 @@ modules:
     repos:
         - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
     install:
-        - openssl
+        - openssl1.1
         - eza
         - zerotier-one
         - zsh
