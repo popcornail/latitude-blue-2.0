@@ -14,8 +14,9 @@ modules:
         - https://copr.fedorainfracloud.org/coprs/aleasto/waydroid/repo/fedora-40/aleasto-waydroid-fedora-40.repo
         - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
         - https://copr.fedorainfracloud.org/coprs/atim/zerotier-one/repo/fedora-40/atim-zerotier-one-fedora-40.repo
+        - https://dl.winehq.org/wine-builds/fedora/39/winehq.repo
     install:
-        - wine
+        - winehq-stable
         - waydroid
         - eza
         - zerotier-one
