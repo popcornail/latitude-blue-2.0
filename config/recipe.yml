@@ -2,7 +2,7 @@ name: latitude-blue-2.0
 description: This is my personal OS image.
 
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 40 
+image-version: latest
 
 modules:
   - type: files
