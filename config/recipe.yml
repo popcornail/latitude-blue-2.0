@@ -1,7 +1,7 @@
 name: latitude-blue-2.0
 description: This is my personal OS image.
 
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/secureblue/kinoite-main-userns-hardened
 image-version: latest
 
 modules:
@@ -46,5 +46,8 @@ modules:
         - org.onlyoffice.desktopeditors
         - com.sindresorhus.Caprine
         - com.bitwarden.desktop
-
+  - type: script
+    scripts:
+        - chromium.sh
+        - bluetooththunder.sh
   - type: signing
