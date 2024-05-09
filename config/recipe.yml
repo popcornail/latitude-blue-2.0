@@ -21,9 +21,6 @@ modules:
         - neovim
         - easyeffects
         - pavucontrol
-        - brave-browser
-    optfix:
-        - brave.com
     remove:
         - filelight
 
