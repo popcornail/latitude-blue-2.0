@@ -11,7 +11,6 @@ modules:
 
   - type: rpm-ostree
     repos:
-        - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
        # - https://copr.fedorainfracloud.org/coprs/atim/zerotier-one/repo/fedora-40/atim-zerotier-one-fedora-40.repo
     install:
         - chromium
