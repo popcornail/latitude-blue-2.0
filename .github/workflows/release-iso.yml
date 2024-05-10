@@ -16,6 +16,8 @@ jobs:
       image: fedora:40
       options: --privileged
     steps:
+      - name: Build Container Installer
+        uses: JasonN3/build-container-installer@v1.2.0
       - uses: actions/checkout@v4
       - name: Generate ISO
         uses: ublue-os/isogenerator-old@v2.3.1
@@ -31,6 +33,7 @@ jobs:
           sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
           sudo dnf install gh -y
       - name: Upload ISO
+            
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -44,3 +47,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: gh release upload auto-iso ${{ steps.isogenerator.outputs.sha256sum-path }} -R ${{ github.repository_owner }}/${{ github.event.repository.name }} --clobber
+            
