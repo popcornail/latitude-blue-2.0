@@ -42,5 +42,4 @@ modules:
   - type: script
     scripts:
         - chromium.sh
-        - bluetooththunder.sh
   - type: signing
