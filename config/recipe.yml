@@ -1,7 +1,7 @@
 name: latitude-blue-2.0
 description: This is my personal OS image.
 
-base-image: ghcr.io/ublue-os/kionite-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest
 
 modules:
