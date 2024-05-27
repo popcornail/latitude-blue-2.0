@@ -24,6 +24,8 @@ modules:
         - neovim
         - easyeffects
         - pavucontrol
+    remove:
+        - filelight
 
   - type: default-flatpaks
     notify: true
