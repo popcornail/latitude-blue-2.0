@@ -39,5 +39,5 @@ modules:
         - com.bitwarden.desktop
   - type: script
     scripts:
-        - chromium.sh
+        #- chromium.sh
   - type: signing
