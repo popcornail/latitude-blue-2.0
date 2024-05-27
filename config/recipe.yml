@@ -1,7 +1,11 @@
 name: latitude-blue-2.0
 description: This is my personal OS image.
 
+<<<<<<< HEAD
 base-image: ghcr.io/ublue-os/kinoite-main
+=======
+base-image: ghcr.io/secureblue/kinoite-main-userns-hardened
+>>>>>>> parent of cbaf49a (Update recipe.yml)
 image-version: latest
 
 modules:
