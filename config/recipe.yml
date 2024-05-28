@@ -23,6 +23,7 @@ modules:
         - pavucontrol
     remove:
         - filelight
+        - plasma-discover
 
   - type: default-flatpaks
     notify: true
