@@ -2,7 +2,7 @@ name: latitude-blue-2.0
 description: This is my personal OS image.
 
 
-base-image: ghcr.io/secureblue/aurora-dx-main-userns-hardened
+base-image: ghcr.io/ublue-os/aurora-dx
 image-version: latest
 
 modules:
