@@ -13,6 +13,7 @@ modules:
   - type: rpm-ostree
     repos:
         - https://copr.fedorainfracloud.org/coprs/atim/zerotier-one/repo/fedora-40/atim-zerotier-one-fedora-40.repo
+        - https://raw.githubusercontent.com/MkKvcs/fedora/main/nordvpn.repo
     install:
         - plymouth
         - chromium
@@ -22,6 +23,7 @@ modules:
         - neovim
         - easyeffects
         - pavucontrol
+        - nordvpn
     remove:
         - filelight
 
