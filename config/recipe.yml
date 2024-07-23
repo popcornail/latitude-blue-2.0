@@ -2,7 +2,7 @@ name: latitude-blue-2.0
 description: This is my personal OS image.
 
 
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: latest
 
 modules:
@@ -14,7 +14,9 @@ modules:
     repos:
         - https://copr.fedorainfracloud.org/coprs/atim/zerotier-one/repo/fedora-40/atim-zerotier-one-fedora-40.repo
         - https://raw.githubusercontent.com/MkKvcs/fedora/main/nordvpn.repo
+        - https://raw.githubusercontent.com/MkKvcs/fedora/main/brave-browser.repo
     install:
+        - brave-browser
         - plymouth
         - chromium
         - eza
@@ -25,7 +27,6 @@ modules:
         - pavucontrol
         - nordvpn
     remove:
-        - filelight
 
   - type: default-flatpaks
     notify: true
@@ -33,6 +34,8 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       install:
+        - cafe.avery.Delfin
+        - com.nordpass.NordPass
         - com.spotify.Client
         - com.discordapp.Discord
         - org.signal.Signal
@@ -42,7 +45,6 @@ modules:
         - org.fedoraproject.MediaWriter
         - org.onlyoffice.desktopeditors
         - com.sindresorhus.Caprine
-        - com.bitwarden.desktop
   - type: script
     scripts:
         - chromium.sh
