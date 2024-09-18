@@ -26,6 +26,7 @@ modules:
         - easyeffects
         - pavucontrol
         - nordvpn
+        - fastfetch
     remove:
 
   - type: default-flatpaks
