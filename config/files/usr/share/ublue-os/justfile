@@ -9,7 +9,6 @@ _default:
 
 # Imports
 import "/usr/share/ublue-os/just/00-default.just"
-import "/usr/share/ublue-os/just/05-brew.just"
 import "/usr/share/ublue-os/just/10-update.just"
 import "/usr/share/ublue-os/just/15-luks.just"
 import "/usr/share/ublue-os/just/20-clean.just"
